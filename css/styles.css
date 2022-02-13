@@ -117,6 +117,22 @@ ol {
   border-bottom: 1px solid #e5e5e5;
 }
 
+.mail-icon {
+  width: 16px;
+  height: 12px;
+}
+
+.tel-icon {
+  width: 10px;
+  height: 16px;
+}
+
+.mail-icon,
+.tel-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 /*---------- Header contacts ----------*/
 
 .contacts {
@@ -204,6 +220,8 @@ ol {
 }
 
 .advantages-title {
+  margin-top: 30px;
+
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -223,6 +241,20 @@ ol {
 
 .adv-section {
   padding-top: 94px;
+}
+
+.adv-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.adv-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-bg-color);
 }
 
 /*---------- Business----------*/
@@ -272,12 +304,6 @@ ol {
   justify-content: center;
 }
 
-.team-box {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
 .team-cards .team-box:not(:last-child) {
   margin-right: 30px;
 }
@@ -316,6 +342,98 @@ ol {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.icon-container {
+  width: 206px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon-flex-box {
+  display: flex;
+  justify-content: center;
+}
+
+.team-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+}
+
+.icon-team-socials {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  background-position: center;
+  fill: #afb1b8;
+}
+
+.icon-mini-box:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon-team-socials {
+  fill: currentColor;
+}
+
+.team-socials:hover,
+.team-socials:focus {
+  color: #ffffff;
+  background-color: var(--action-color);
+  border-radius: 50%;
+}
+
+/*----------Regular Clients--------- */
+
+.logo-container {
+  display: flex;
+}
+
+.logo-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid;
+  border-color: currentColor;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+
+.logo-distance:not(:last-child) {
+  margin-right: 30px;
+}
+
+.logo-icon {
+  fill: currentColor;
+}
+
+.logo-icon-box:hover,
+.logo-icon-box:focus {
+  color: var(--action-color);
+}
+
+.customers {
+  text-align: center;
+}
+
+.customers-title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.logo-conta:nth-child(2) {
+  width: 40px;
+  height: 52px;
 }
 
 /*---------- Footer ----------*/
@@ -360,6 +478,68 @@ ol {
   color: var(--action-color);
 }
 
+.footer-links {
+  text-align: start;
+  display: inline-block;
+  margin-left: 70px;
+  margin-bottom: 40px;
+  width: 206px;
+  height: 80px;
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-bg-color);
+}
+
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.icon-team-socials-footer {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  background-position: center;
+  fill: #ffffff;
+}
+
+.team-socials-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-flex-box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-team-socials-footer .icon-team-socials-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.icon-mini-box-footer:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-socials-footer:hover,
+.team-socials-footer:focus {
+  background-color: var(--action-color);
+}
 /*---------- Portfolio buttons ----------*/
 
 .buttons-list {
@@ -392,6 +572,8 @@ ol {
 .button:focus {
   color: var(--primary-bg-color);
   background-color: var(--action-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* ----------Projects---------- */
@@ -414,7 +596,18 @@ ol {
 .team-box,
 .project-box {
   background-color: var(--primary-bg-color);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
+
+.project-box:hover,
+.project-box:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .project-list {
   display: flex;
   flex-wrap: wrap;

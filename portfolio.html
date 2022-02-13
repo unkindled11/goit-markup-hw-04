@@ -41,13 +41,21 @@
 
         <ul class="contacts list">
           <li class="item">
-            <a class="header-contacts-info" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <div class="contacts-info-flex">
+              <a class="header-contacts-info" href="mailto:info@devstudio.com">
+                <svg class="mail-icon">
+                  <use
+                    href="./images/symbol-defs.svg#icon-mail-icon"
+                  ></use></svg
+                >info@devstudio.com
+              </a>
+            </div>
           </li>
           <!-- Link to phone number  -->
           <li class="item">
-            <a class="header-contacts-info" href="tel:+380961111111"
+            <a class="header-contacts-info" href="tel:+380961111111">
+              <svg class="tel-icon">
+                <use href="./images/symbol-defs.svg#icon-tel-icon"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
@@ -190,25 +198,67 @@
     </main>
     <!--Footer-->
     <footer class="footer">
-      <div class="container">
-        <a class="footer logo" href="/"> <span class="web">Web</span>Studio</a>
-        <address>
-          <ul class="adress-list list">
-            <li>
-              <a class="adress" href=""> г. Киев, пр-т Леси Украинки, 26</a>
+      <div class="container footer-box">
+        <div class="footer-adress">
+          <div class="web-sudio">
+            <a class="footer logo" href="/">
+              <span class="web">Web</span>Studio</a
+            >
+          </div>
+          <address>
+            <ul class="adress-list list">
+              <li>
+                <a class="adress" href=""> г. Киев, пр-т Леси Украинки, 26</a>
+              </li>
+              <li class="contacts-distance">
+                <a class="footer-contacts-info" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="">
+                <a class="footer-contacts-info" href="+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-links">
+          <span class="footer-title">присоединяйтесь</span>
+          <ul class="icon-flex-box list">
+            <li class="icon-mini-box-footer">
+              <a href="#" class="team-socials-footer">
+                <svg class="icon-team-socials-footer">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="contacts-distance">
-              <a class="footer-contacts-info" href="mailto:info@example.com"
-                >info@example.com</a
-              >
+
+            <li class="icon-mini-box-footer">
+              <a href="#" class="team-socials-footer">
+                <svg class="icon-team-socials-footer">
+                  <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
             </li>
-            <li class="">
-              <a class="footer-contacts-info" href="+380991111111"
-                >+38 099 111 11 11</a
-              >
+
+            <li class="icon-mini-box-footer">
+              <a href="#" class="team-socials-footer">
+                <svg class="icon-team-socials-footer">
+                  <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="icon-mini-box-footer">
+              <a href="#" class="team-socials-footer">
+                <svg class="icon-team-socials-footer">
+                  <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
